@@ -1,0 +1,38 @@
+[
+  {
+    "name": "cost-focused",
+    "lambda_cost": 0.8,
+    "lambda_sla": 0.5,
+    "cost": 67.20000000000046,
+    "breaches": 57375.0,
+    "utilisation": 0.9815949491770066,
+    "avg_vms": 2.0
+  },
+  {
+    "name": "balanced-cost",
+    "lambda_cost": 0.5,
+    "lambda_sla": 1.0,
+    "cost": 176.3099999999983,
+    "breaches": 3560.2,
+    "utilisation": 0.9505078679710997,
+    "avg_vms": 5.247321428571429
+  },
+  {
+    "name": "balanced-sla",
+    "lambda_cost": 0.4,
+    "lambda_sla": 1.5,
+    "cost": 176.15999999999818,
+    "breaches": 3576.6,
+    "utilisation": 0.9499734430667249,
+    "avg_vms": 5.242857142857143
+  },
+  {
+    "name": "sla-focused",
+    "lambda_cost": 0.3,
+    "lambda_sla": 2.5,
+    "cost": 178.87999999999843,
+    "breaches": 799.2,
+    "utilisation": 0.9525430881025528,
+    "avg_vms": 5.323809523809524
+  }
+]
