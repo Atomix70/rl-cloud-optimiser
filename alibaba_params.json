@@ -1,0 +1,2204 @@
+{
+  "source": "Alibaba Cluster Trace 2018, machine_usage, 7 days",
+  "fidelity": "utilisation-derived arrival pattern",
+  "stats": {
+    "0": {
+      "0": {
+        "arrival_rate": 61026.109488230075,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "1": {
+        "arrival_rate": 70838.30757733539,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "2": {
+        "arrival_rate": 68352.16114207769,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "3": {
+        "arrival_rate": 71271.53334857535,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "4": {
+        "arrival_rate": 71349.36062775973,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "5": {
+        "arrival_rate": 91476.40297733239,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "6": {
+        "arrival_rate": 136043.74760869946,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "7": {
+        "arrival_rate": 97708.58109871972,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "8": {
+        "arrival_rate": 103473.93649283015,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "9": {
+        "arrival_rate": 92199.37529177619,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "10": {
+        "arrival_rate": 85457.15938787578,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "11": {
+        "arrival_rate": 85377.49110379347,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "12": {
+        "arrival_rate": 85225.57262870064,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "13": {
+        "arrival_rate": 86705.92612257123,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "14": {
+        "arrival_rate": 81995.6810799304,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "15": {
+        "arrival_rate": 82020.14118479133,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "16": {
+        "arrival_rate": 85514.3573945809,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "17": {
+        "arrival_rate": 84563.22170236868,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "18": {
+        "arrival_rate": 78512.4649214154,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "19": {
+        "arrival_rate": 68847.53185135665,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "20": {
+        "arrival_rate": 74693.37813986877,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "21": {
+        "arrival_rate": 71265.14005797969,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "22": {
+        "arrival_rate": 65132.79464862926,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "23": {
+        "arrival_rate": 59003.039097343295,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    "1": {
+      "0": {
+        "arrival_rate": 80136.00686889737,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "1": {
+        "arrival_rate": 83398.82898824703,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "2": {
+        "arrival_rate": 90607.35018762774,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "3": {
+        "arrival_rate": 96615.64250674524,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "4": {
+        "arrival_rate": 94871.06738791599,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "5": {
+        "arrival_rate": 115910.94687730008,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "6": {
+        "arrival_rate": 148436.69121112092,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "7": {
+        "arrival_rate": 124878.30504480039,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "8": {
+        "arrival_rate": 119735.33639814041,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "9": {
+        "arrival_rate": 119116.2342452125,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "10": {
+        "arrival_rate": 105666.21519302923,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "11": {
+        "arrival_rate": 114638.98137612015,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "12": {
+        "arrival_rate": 108234.63180449288,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "13": {
+        "arrival_rate": 92989.81059647384,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "14": {
+        "arrival_rate": 96134.90411566406,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "15": {
+        "arrival_rate": 94512.04893007466,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "16": {
+        "arrival_rate": 84460.95747518478,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "17": {
+        "arrival_rate": 72046.10959458708,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "18": {
+        "arrival_rate": 71726.51734956418,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "19": {
+        "arrival_rate": 89638.46899933889,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "20": {
+        "arrival_rate": 95992.47913511787,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "21": {
+        "arrival_rate": 93674.38856275896,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "22": {
+        "arrival_rate": 88183.80581130862,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "23": {
+        "arrival_rate": 98010.38771576954,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    "2": {
+      "0": {
+        "arrival_rate": 109286.13201509448,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "1": {
+        "arrival_rate": 150343.18853402132,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "2": {
+        "arrival_rate": 130125.66723999676,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "3": {
+        "arrival_rate": 127845.28922396261,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "4": {
+        "arrival_rate": 129308.31049431482,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "5": {
+        "arrival_rate": 134705.9481596896,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "6": {
+        "arrival_rate": 127291.62227473699,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "7": {
+        "arrival_rate": 117322.20197195053,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "8": {
+        "arrival_rate": 109405.58931042324,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "9": {
+        "arrival_rate": 105123.0355890838,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "10": {
+        "arrival_rate": 106307.39339207196,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "11": {
+        "arrival_rate": 91971.30375569485,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "12": {
+        "arrival_rate": 91364.83371280316,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "13": {
+        "arrival_rate": 80201.31729443846,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "14": {
+        "arrival_rate": 87408.26177687102,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "15": {
+        "arrival_rate": 90493.11343264373,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "16": {
+        "arrival_rate": 89042.84896679276,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "17": {
+        "arrival_rate": 77540.24625245627,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "18": {
+        "arrival_rate": 72838.07835130589,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "19": {
+        "arrival_rate": 85251.75570429626,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "20": {
+        "arrival_rate": 87813.67347411696,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "21": {
+        "arrival_rate": 87171.83742102007,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "22": {
+        "arrival_rate": 100137.74680760241,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "23": {
+        "arrival_rate": 100880.00869049129,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    "3": {
+      "0": {
+        "arrival_rate": 106998.23690654279,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "1": {
+        "arrival_rate": 144566.0871379274,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "2": {
+        "arrival_rate": 133415.30527195198,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "3": {
+        "arrival_rate": 120449.09797155348,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "4": {
+        "arrival_rate": 122538.08030719255,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "5": {
+        "arrival_rate": 109652.31840046018,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "6": {
+        "arrival_rate": 113255.618696546,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "7": {
+        "arrival_rate": 112907.84285536708,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "8": {
+        "arrival_rate": 111175.74460813493,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "9": {
+        "arrival_rate": 107836.19189447109,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "10": {
+        "arrival_rate": 95586.20974371956,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "11": {
+        "arrival_rate": 95990.99178375646,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "12": {
+        "arrival_rate": 89991.66812935178,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "13": {
+        "arrival_rate": 85526.34164264347,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "14": {
+        "arrival_rate": 85847.27001746395,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "15": {
+        "arrival_rate": 78016.573151978,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "16": {
+        "arrival_rate": 91435.43893221361,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "17": {
+        "arrival_rate": 85007.91477118101,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "18": {
+        "arrival_rate": 81711.01767401863,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "19": {
+        "arrival_rate": 91652.94342109545,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "20": {
+        "arrival_rate": 90132.20153875233,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "21": {
+        "arrival_rate": 76707.62994251514,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "22": {
+        "arrival_rate": 115375.507623525,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "23": {
+        "arrival_rate": 122942.59576982853,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    "4": {
+      "0": {
+        "arrival_rate": 141944.4234075098,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "1": {
+        "arrival_rate": 149027.44575212194,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "2": {
+        "arrival_rate": 139964.3901881926,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "3": {
+        "arrival_rate": 133706.02273922713,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "4": {
+        "arrival_rate": 129406.8060191477,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "5": {
+        "arrival_rate": 121745.77748580092,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "6": {
+        "arrival_rate": 120895.83007260221,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "7": {
+        "arrival_rate": 108929.0912142546,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "8": {
+        "arrival_rate": 115941.95114736528,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "9": {
+        "arrival_rate": 116851.22340402307,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "10": {
+        "arrival_rate": 92889.51051597236,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "11": {
+        "arrival_rate": 80327.20709646346,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "12": {
+        "arrival_rate": 76615.55475420396,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "13": {
+        "arrival_rate": 75093.63216880498,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "14": {
+        "arrival_rate": 74878.58490622717,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "15": {
+        "arrival_rate": 79273.81460454108,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "16": {
+        "arrival_rate": 77814.28263403804,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "17": {
+        "arrival_rate": 72802.612309416,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "18": {
+        "arrival_rate": 72638.54082209643,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "19": {
+        "arrival_rate": 81939.69867131431,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "20": {
+        "arrival_rate": 89929.23823652061,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "21": {
+        "arrival_rate": 92166.6924969787,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "22": {
+        "arrival_rate": 104777.67965275572,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "23": {
+        "arrival_rate": 112872.58685662103,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    "5": {
+      "0": {
+        "arrival_rate": 113865.35069165089,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "1": {
+        "arrival_rate": 157197.16294000976,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "2": {
+        "arrival_rate": 128606.80809877267,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "3": {
+        "arrival_rate": 110286.49839447965,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "4": {
+        "arrival_rate": 116069.09552179607,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "5": {
+        "arrival_rate": 105845.473590904,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "6": {
+        "arrival_rate": 104331.61319185341,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "7": {
+        "arrival_rate": 97885.48872453142,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "8": {
+        "arrival_rate": 91675.68745312368,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "9": {
+        "arrival_rate": 81650.89691108746,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "10": {
+        "arrival_rate": 81110.46486951006,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "11": {
+        "arrival_rate": 78054.06042575785,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "12": {
+        "arrival_rate": 78408.28515480495,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "13": {
+        "arrival_rate": 66942.16830873412,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "14": {
+        "arrival_rate": 73513.36728759197,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "15": {
+        "arrival_rate": 71588.89240582654,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "16": {
+        "arrival_rate": 75922.76614574147,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "17": {
+        "arrival_rate": 74340.56132710868,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "18": {
+        "arrival_rate": 67711.47119370634,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "19": {
+        "arrival_rate": 92227.7842763959,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "20": {
+        "arrival_rate": 100856.39252466126,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "21": {
+        "arrival_rate": 97796.85922001905,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "22": {
+        "arrival_rate": 105117.19512760612,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "23": {
+        "arrival_rate": 110268.51224684803,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    "6": {
+      "0": {
+        "arrival_rate": 130744.70155055179,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "1": {
+        "arrival_rate": 149652.71684274456,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "2": {
+        "arrival_rate": 131257.3894258021,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "3": {
+        "arrival_rate": 118585.76546787203,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "4": {
+        "arrival_rate": 131595.33086711762,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "5": {
+        "arrival_rate": 113938.86649550119,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "6": {
+        "arrival_rate": 127979.94504475588,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "7": {
+        "arrival_rate": 123018.69643054265,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "8": {
+        "arrival_rate": 113847.91130783237,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "9": {
+        "arrival_rate": 103175.6003492677,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "10": {
+        "arrival_rate": 98864.68194508809,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "11": {
+        "arrival_rate": 100107.948085312,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "12": {
+        "arrival_rate": 112051.25201776989,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "13": {
+        "arrival_rate": 91095.54635209031,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "14": {
+        "arrival_rate": 89663.78204494285,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "15": {
+        "arrival_rate": 89077.07177277411,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "16": {
+        "arrival_rate": 94870.91216719679,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "17": {
+        "arrival_rate": 82356.41872697206,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "18": {
+        "arrival_rate": 70842.30882392383,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "19": {
+        "arrival_rate": 81139.23731770008,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "20": {
+        "arrival_rate": 98609.41106028689,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "21": {
+        "arrival_rate": 90161.15806241223,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "22": {
+        "arrival_rate": 100576.48569940869,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "23": {
+        "arrival_rate": 116494.89211273058,
+        "avg_cpu": 0.04,
+        "cpu_std": 0.02,
+        "avg_mem": 0.035,
+        "mem_std": 0.02,
+        "class_distribution": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    }
+  }
+}
