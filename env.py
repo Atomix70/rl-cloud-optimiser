@@ -18,10 +18,14 @@ STEPS_PER_WEEK = STEPS_PER_DAY * 7        # 672  (one episode = one week)
 # ---- workload scaling (calibrated so 2-20 VM range is meaningful) ----
 WORKLOAD_SCALE = 0.008
 
-# ---- reward weights (balanced config; varied later for Pareto frontier) ----
 LAMBDA_COST = 0.4
 LAMBDA_SLA  = 1.5
 LAMBDA_UTIL = 0.1
+
+# ---- surge configuration (synthetic spikes for hint training) ----
+SURGE_LEAD_STEPS = 4          # how many steps before a surge the hint activates
+SURGE_MIN, SURGE_MAX = 3.5, 5.0   # surge magnitude range
+SURGE_DUR_MIN, SURGE_DUR_MAX = 8, 14   # surge duration in steps
 
 print("Setup complete. Steps per week:", STEPS_PER_WEEK)
 
@@ -30,16 +34,20 @@ class CloudClusterEnv(gym.Env):
     """Simulated cloud cluster. The agent chooses how many VMs to run,
     balancing cost against SLA compliance, using CPU and memory signals."""
 
-    def __init__(self, stats, lambda_cost = LAMBDA_COST, lambda_sla=LAMBDA_SLA, lambda_util=LAMBDA_UTIL, seed=None):
+    def __init__(self, stats, lambda_cost=LAMBDA_COST, lambda_sla=LAMBDA_SLA,
+                 lambda_util=LAMBDA_UTIL, seed=None, enable_surges=False,
+                 enable_hints=False, min_surges=1, max_surges=3):
         super().__init__()
         self.stats = stats
         self.lambda_cost = lambda_cost
         self.lambda_sla = lambda_sla
-        self.lambda_util= lambda_util
+        self.lambda_util = lambda_util
         self._rng = np.random.default_rng(seed)
-        # continuous action: one value in [-1, 1] -> scaling delta
+        self.enable_surges = enable_surges     # turn synthetic surges on/off
+        self.enable_hints = enable_hints       # turn hint signalling on/off
+        self.min_surges = min_surges       
+        self.max_surges = max_surges       
         self.action_space = spaces.Box(-1.0, 1.0, shape=(1,), dtype=np.float32)
-        # 32-dim observation (29 core + 3 hint slots)
         self.observation_space = spaces.Box(0.0, 1.0, shape=(32,), dtype=np.float32)
 
     # ---------------------------------------------------------------- reset
@@ -50,14 +58,25 @@ class CloudClusterEnv(gym.Env):
         self.queue = []
         self.cost_total = 0.0
         self.total_breaches = 0
-        self.history = [[0.0, 0.0, 0.0, 0.0] for _ in range(5)]  # avg/max cpu, avg/max mem
+        self.history = [[0.0, 0.0, 0.0, 0.0] for _ in range(5)]
         self.prev_queue_len = 0
-        # hint slots (0 until synthetic-hint training / operator input)
         self.hint_active = 0.0
         self.hint_magnitude = 0.0
         self.hint_time_to_event = 0.0
-        # decision log -> feeds the Phase 2 RAG explainability layer
         self.decision_log = []
+
+        # ---- schedule surges for this episode ----
+        self.surges = []
+        if self.enable_surges:
+            n_surges = self._rng.integers(self.min_surges, self.max_surges + 1)        # 1 or 2 surges
+            for _ in range(n_surges):
+                start = int(self._rng.integers(20, STEPS_PER_WEEK - 20))
+                duration = int(self._rng.integers(SURGE_DUR_MIN, SURGE_DUR_MAX))
+                magnitude = float(self._rng.uniform(SURGE_MIN, SURGE_MAX))
+                self.surges.append({'start': start,
+                                    'end': start + duration,
+                                    'magnitude': magnitude})
+
         return self._build_state(), {}
 
     # --------------------------------------------------------- time helper
@@ -67,12 +86,40 @@ class CloudClusterEnv(gym.Env):
         day = int((total_hours // 24) % 7)
         return day, hour
 
+    # ------------------------------------------------- surge helpers
+    def _surge_multiplier(self):
+        """Arrival multiplier at the current step (1.0 if no active surge)."""
+        for surge in self.surges:
+            if surge['start'] <= self.step_count < surge['end']:
+                return surge['magnitude']
+        return 1.0
+
+    def _update_hints(self):
+        """Set hint slots if a surge is approaching within the lead window."""
+        # default: no hint
+        self.hint_active = 0.0
+        self.hint_magnitude = 0.0
+        self.hint_time_to_event = 0.0
+        if not self.enable_hints:
+            return
+        for surge in self.surges:
+            steps_until = surge['start'] - self.step_count
+            # activate hint during the lead window before the surge starts
+            if 0 < steps_until <= SURGE_LEAD_STEPS:
+                self.hint_active = 1.0
+                # magnitude normalised to 0-1 (surge 2.5-3.0 -> ~0.83-1.0)
+                self.hint_magnitude = float(np.clip(surge['magnitude'] / 3.0, 0.0, 1.0))
+                # time-to-event: 1.0 = imminent, smaller = further away
+                self.hint_time_to_event = float(1.0 - steps_until / SURGE_LEAD_STEPS)
+                return
+
     # ------------------------------------------------------ job generation
     def _generate_jobs(self):
         day, hour = self._current_day_hour()
         s = self.stats[str(day)][str(hour)]
-        jobs_this_step_mean = (s['arrival_rate'] * WORKLOAD_SCALE) / STEPS_PER_HOUR
-        n_jobs = self._rng.poisson(jobs_this_step_mean)
+        base_mean = (s['arrival_rate'] * WORKLOAD_SCALE) / STEPS_PER_HOUR
+        surge_mult = self._surge_multiplier()               # ← surge applied
+        n_jobs = self._rng.poisson(base_mean * surge_mult)
         deadline_by_class = {0: 2, 1: 4, 2: 8, 3: 16}
         new_jobs = []
         for _ in range(n_jobs):
@@ -94,7 +141,7 @@ class CloudClusterEnv(gym.Env):
             for vm_idx in sorted(range(self.active_vms), key=lambda i: vm_cpu_load[i]):
                 cpu_ok = vm_cpu_load[vm_idx] + job['cpu'] <= VM_CPU_CAP
                 mem_ok = vm_mem_load[vm_idx] + job['mem'] <= VM_MEM_CAP
-                if cpu_ok and mem_ok:          # needs BOTH cpu and mem room
+                if cpu_ok and mem_ok:
                     vm_cpu_load[vm_idx] += job['cpu']
                     vm_mem_load[vm_idx] += job['mem']
                     jobs_processed += 1
@@ -164,14 +211,17 @@ class CloudClusterEnv(gym.Env):
 
     # ----------------------------------------------------------- the step
     def step(self, action):
-        # 1. apply action: [-1,1] -> up to +/-5 VMs
+        # update hint slots BEFORE the agent's next observation reflects them
+        self._update_hints()                                # ← NEW
+
+        # 1. apply action
         delta = int(round(float(action[0]) * 5))
         self.active_vms = int(np.clip(self.active_vms + delta, MIN_PODS, MAX_PODS))
 
-        # 2. generate jobs
+        # 2. generate jobs (surge applied inside)
         self.queue.extend(self._generate_jobs())
 
-        # 3. assign to VMs (CPU + memory)
+        # 3. assign to VMs
         jobs_processed, avg_cpu, max_cpu, avg_mem, max_mem = self._assign_jobs()
 
         # 4. deadlines -> breaches
@@ -181,12 +231,9 @@ class CloudClusterEnv(gym.Env):
         # 5. cost & utilisation
         cost = self.active_vms / MAX_PODS
         self.cost_total += cost
-        # capacity = self.active_vms * JOBS_PER_STEP_PER_VM
-        # utilisation = jobs_processed / capacity if capacity > 0 else 0.0
         utilisation = max(avg_cpu, avg_mem)
 
-        # normalise breaches into a 0-1 rate so it can't dwarf cost
-        jobs_due_this_step = jobs_processed + breaches   # rough denominator
+        jobs_due_this_step = jobs_processed + breaches
         breach_rate = breaches / jobs_due_this_step if jobs_due_this_step > 0 else 0.0
 
         # 6. reward
@@ -194,11 +241,10 @@ class CloudClusterEnv(gym.Env):
                   - self.lambda_sla * breach_rate
                   + self.lambda_util * utilisation)
 
-        # 7. history (real memory values)
+        # 7. history
         self.history.append([avg_cpu, max_cpu, avg_mem, max_mem])
         self.history.pop(0)
 
-        # log decision for Phase 2 RAG
         day, hour = self._current_day_hour()
         self.decision_log.append({
             'step': self.step_count, 'day': day, 'hour': hour,
@@ -206,6 +252,7 @@ class CloudClusterEnv(gym.Env):
             'avg_cpu': round(avg_cpu, 3), 'avg_mem': round(avg_mem, 3),
             'queue': len(self.queue), 'breaches': breaches,
             'reward': round(reward, 3),
+            'hint_active': self.hint_active,          # ← logged for RAG/analysis
         })
 
         self.prev_queue_len = len(self.queue)
@@ -215,7 +262,10 @@ class CloudClusterEnv(gym.Env):
         done = self.step_count >= STEPS_PER_WEEK
         info = {'cost': cost, 'breaches': breaches, 'utilisation': utilisation,
                 'active_vms': self.active_vms, 'queue': len(self.queue),
-                'avg_cpu': avg_cpu, 'avg_mem': avg_mem}
+                'avg_cpu': avg_cpu, 'avg_mem': avg_mem,
+                'surge_mult': self._surge_multiplier(),   # ← for diagnostics
+                'hint_active': self.hint_active}
         return obs, reward, done, False, info
+
 
 print("CloudClusterEnv defined.")
