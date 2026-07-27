@@ -1,0 +1,8 @@
+{
+  "regime": "\u00b15 VM/step",
+  "with_hints": 25319.9,
+  "without_hints": 27043.166666666668,
+  "with_std": 22787.09819517761,
+  "without_std": 22760.71261491803,
+  "reduction_pct": 6.37228135265224
+}
