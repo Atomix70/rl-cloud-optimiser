@@ -68,7 +68,7 @@ class CloudClusterEnv(gym.Env):
         # ---- schedule surges for this episode ----
         self.surges = []
         if self.enable_surges:
-            n_surges = self._rng.integers(self.min_surges, self.max_surges + 1)        # 1 or 2 surges
+            n_surges = self._rng.integers(self.min_surges, self.max_surges + 1)
             for _ in range(n_surges):
                 start = int(self._rng.integers(20, STEPS_PER_WEEK - 20))
                 duration = int(self._rng.integers(SURGE_DUR_MIN, SURGE_DUR_MAX))
@@ -107,7 +107,11 @@ class CloudClusterEnv(gym.Env):
             # activate hint during the lead window before the surge starts
             if 0 < steps_until <= SURGE_LEAD_STEPS:
                 self.hint_active = 1.0
-                # magnitude normalised to 0-1 (surge 2.5-3.0 -> ~0.83-1.0)
+                # NOTE: with the current surge range (3.5-5.0) this always clips
+                # to 1.0, so hint_magnitude carries no gradation — the trained
+                # hint models learned from hint_active and time_to_event only.
+                # Kept as-is: changing the divisor would shift the input
+                # distribution of the already-trained hint models.
                 self.hint_magnitude = float(np.clip(surge['magnitude'] / 3.0, 0.0, 1.0))
                 # time-to-event: 1.0 = imminent, smaller = further away
                 self.hint_time_to_event = float(1.0 - steps_until / SURGE_LEAD_STEPS)

@@ -25,6 +25,32 @@ def run_hpa(env, up=0.70, down=0.30):
             'util': util/steps, 'vms': float(np.mean(vms))}
 
 
+def run_hpa_proportional(env, target=0.6, tolerance=0.1):
+    """Kubernetes-style proportional HPA baseline.
+    Real HPA: desired = ceil(current * currentUtil / targetUtil), no action
+    within the tolerance band. Subject to the same +/-5 VMs/step limit as
+    every other agent (the env's action range)."""
+    import math
+    env.reset()
+    cost = breaches = util = 0.0; vms = []; steps = 0
+    from env import STEPS_PER_WEEK
+    for t in range(STEPS_PER_WEEK):
+        cpu = env.history[-1][0]
+        current = env.active_vms
+        ratio = cpu / target
+        if abs(ratio - 1.0) <= tolerance:
+            delta = 0
+        else:
+            desired = math.ceil(current * ratio)
+            delta = int(np.clip(desired - current, -5, 5))
+        _, r, done, _, info = env.step(np.array([delta / 5.0]))
+        cost += info['cost']; breaches += info['breaches']
+        util += info['utilisation']; vms.append(info['active_vms']); steps += 1
+        if done: break
+    return {'cost': cost, 'breaches': breaches,
+            'util': util/steps, 'vms': float(np.mean(vms))}
+
+
 def run_ppo(env, net):
     """Evaluate a trained PPO agent (deterministic mean action)."""
     obs, _ = env.reset()
