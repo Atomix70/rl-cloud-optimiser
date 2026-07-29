@@ -3,36 +3,40 @@
     "name": "cost-focused",
     "lambda_cost": 0.8,
     "lambda_sla": 0.5,
+    "lambda_util": 0.1,
     "cost": 67.20000000000046,
-    "breaches": 57375.0,
-    "utilisation": 0.9815949491770066,
+    "breaches": 57083.0,
+    "utilisation": 0.9827553258921249,
     "avg_vms": 2.0
   },
   {
     "name": "balanced-cost",
     "lambda_cost": 0.5,
     "lambda_sla": 1.0,
-    "cost": 176.3099999999983,
-    "breaches": 3560.2,
-    "utilisation": 0.9505078679710997,
-    "avg_vms": 5.247321428571429
+    "lambda_util": 0.1,
+    "cost": 171.73999999999796,
+    "breaches": 4464.4,
+    "utilisation": 0.9602832931046426,
+    "avg_vms": 5.111309523809524
   },
   {
     "name": "balanced-sla",
     "lambda_cost": 0.4,
     "lambda_sla": 1.5,
-    "cost": 176.15999999999818,
-    "breaches": 3576.6,
-    "utilisation": 0.9499734430667249,
-    "avg_vms": 5.242857142857143
+    "lambda_util": 0.1,
+    "cost": 183.0999999999986,
+    "breaches": 858.6,
+    "utilisation": 0.9326626462109384,
+    "avg_vms": 5.449404761904762
   },
   {
     "name": "sla-focused",
     "lambda_cost": 0.3,
     "lambda_sla": 2.5,
-    "cost": 178.87999999999843,
-    "breaches": 799.2,
-    "utilisation": 0.9525430881025528,
-    "avg_vms": 5.323809523809524
+    "lambda_util": 0.1,
+    "cost": 177.54999999999868,
+    "breaches": 841.0,
+    "utilisation": 0.9491676868069646,
+    "avg_vms": 5.28422619047619
   }
 ]
