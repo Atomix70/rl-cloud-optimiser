@@ -7,7 +7,8 @@ Agreement (SLA) breaches. This repository contains the simulator, the agent, the
 baselines, the full experimental evaluation, and an explainability chatbot.
 
 > This is the **research/training** project. The live Kubernetes deployment lives
-> in a separate repository (see the deployment project's README).
+> in the sibling project `cloud-r1-deployment` — see `../cloud-r1-deployment/README.md`
+> for how to run the trained policy against a real Minikube cluster.
 
 ---
 
